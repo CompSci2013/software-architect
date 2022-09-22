@@ -1,0 +1,8 @@
+OSI MODEL
+1 Application : Human interaction, applications access network
+2 Presentation: format data, data encryption
+3 Session     : maintain connections, control ports, sessions
+4 Transport   : transmit via TCP and UDP
+5 Network     : decide which physical path
+6 Datalink    : define format of data on the network
+7 Physical    : transmit raw bits over the physical medium

@@ -1,0 +1,20 @@
+Characteristics of microservice architecture
+  Independent # Not required to follow every characteristic
+    - Scaling
+    - Governance
+    - Deployment
+    - Testing
+    - Functionality
+Load Balancing
+  - automatically distributes incoming traffic across multiple targets
+  - monitors health of targets
+  - integrates with SSL
+  - "Elastic"
+  ALB: Application Load Balancer
+    - Operates on OSI Layer 7
+    - Routes traffic based on url path
+    - validates and terminates SSL
+  NLB: Network Load Balancer
+    - Operates on OSI layer 4
+    - Routes traffic basid on protocol and port of incoming traffic
+    - SSL passthrough by default
