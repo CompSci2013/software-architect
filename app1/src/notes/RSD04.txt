@@ -1,0 +1,12 @@
+API real-world example
+<restaraunt customer> -> (waiter) -> <kitchen>
+
+An application typically deals with lots of things that have nothing to do with
+the business logic or business process at hand. 
+Examples:
+  - Traffic management
+  - Load Balancing
+  - Specific input/output needs
+  - AuthN/Z
+Create a new layer to handle the activities listed above.
+This is the API Gateway layer, also known as the orchestration layer.

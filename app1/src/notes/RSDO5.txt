@@ -1,0 +1,21 @@
+ALV vs API Gateway
+
+Application Load Balancer (ALB)
+  - automatically distributes incoming traffic access backend targets
+  - Layer 7 load Balancer
+  - Infrastructure managed by AWS, highly available, elastic
+
+
+API Gateway
+  - Fully managed and serverless API service from AWS
+  - automatically scales up and down
+  - Infrastructure managed by AWS, highly available, elastic
+
+
+What is different between API Gateway and ALB ?
+                                                API Gateway     ALB
+Can implement rate limiting, bursting for APIs  yes             no
+Integrate with AWS WAF for protection           yes             yes
+traffic accepted                                HTTPS only      HTTP and HTTPS
+request validation, request/respons mapping     yes             no
+
