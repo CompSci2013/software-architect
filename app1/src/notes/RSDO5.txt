@@ -13,9 +13,15 @@ API Gateway
 
 
 What is different between API Gateway and ALB ?
-                                                API Gateway     ALB
-Can implement rate limiting, bursting for APIs  yes             no
-Integrate with AWS WAF for protection           yes             yes
-traffic accepted                                HTTPS only      HTTP and HTTPS
-request validation, request/respons mapping     yes             no
-
+                                                    API Gateway             ALB
+Can implement rate limiting, bursting for APIs      yes                     no
+Integrate with AWS WAF for protection               yes                     yes
+traffic accepted                                    HTTPS only              HTTP and HTTPS
+request validation, request/respons mapping         yes                     no
+spiky traffic                                       can handle default      delay during spike,
+                                                    rate - 10k rps, 5k      pre-allocate LCUs to
+                                                    burst rate              avoid delay (charged extra)
+Able to integrate with Lambda from different        yes                     no, ALB is a regional service
+region, even different AWS account
+Able to export/import APIs across API platforms     yes                     no direct method to import/export
+using swagger, Open API Spec 3.0                                            rules for cross platforms
